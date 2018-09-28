@@ -1,0 +1,13 @@
+.default-card {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .main-div {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

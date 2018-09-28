@@ -1,0 +1,32 @@
+.container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.main-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.style-side-nav {
+    background: rgb(105, 104, 109);
+    color: white;
+}
+
+.style-toolbar {
+    flex: 1 1 auto;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-color {
+    background-color: #303030;
+}

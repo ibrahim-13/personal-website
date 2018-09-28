@@ -1,0 +1,84 @@
+<!--
+//Mobile View 
+<div *ngIf="isMobile">
+  <mat-toolbar color="grey" style="padding: 10%;">
+    <mat-toolbar-row>
+        <h2>MD. Ibrahim Khan</h2>
+        <span class="spacer"></span>
+        <button mat-mini-fab [matMenuTriggerFor]="menu" color="accent">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item color="accent" routerLink="{{url_me}}">About Me</button>
+          <button mat-menu-item color="accent" routerLink="{{url_education}}">Education</button>
+          <button mat-menu-item color="accent" routerLink="{{url_skills}}">Skills</button>
+          <button mat-menu-item color="accent" routerLink="{{url_experiences}}">Experiences</button>
+          <button mat-menu-item color="accent" routerLink="{{url_campus}}">Campus Involvements</button>
+          <button mat-menu-item color="accent" routerLink="{{url_research}}">Research</button>
+          <button disabled mat-menu-item color="accent">Download CV</button>
+        </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>
+
+//PC View
+<div *ngIf="!isMobile">
+  <mat-sidenav-container class="container">
+    <mat-sidenav mode="side" opened class="style-side-nav">
+    <div>
+      <button mat-button color="accent" routerLink="{{url_me}}"><h2>MD. Ibrahim Khan</h2><br></button><br>
+      <button mat-button color="accent" routerLink="{{url_me}}">About Me</button><br>
+      <button mat-button color="accent" routerLink="{{url_education}}">Education</button><br>
+      <button mat-button color="accent" routerLink="{{url_skills}}">Skills</button><br>
+      <button mat-button color="accent" routerLink="{{url_experiences}}">Experiences</button><br>
+      <button mat-button color="accent" routerLink="{{url_campus}}">Campus Involvements</button><br>
+      <button mat-button color="accent" routerLink="{{url_research}}">Research</button><br>
+      <button disabled mat-button color="accent">Download CV</button><br>
+    </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+-->
+
+<!-- PC View-->
+<div class="main-container">
+    <mat-toolbar color="grey">
+        <mat-toolbar-row>
+            <a mat-button color="accent" routerLink="{{url_me}}"><h2>MD. Ibrahim Khan</h2></a>
+            <span class="spacer"></span>
+            <button mat-mini-fab [matMenuTriggerFor]="menu" color="accent">Menu</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item color="accent" routerLink="{{url_me}}">About Me</button>
+              <button mat-menu-item color="accent" routerLink="{{url_education}}">Education</button>
+              <button mat-menu-item color="accent" routerLink="{{url_skills}}">Skills</button>
+              <button mat-menu-item color="accent" routerLink="{{url_experiences}}">Experiences</button>
+              <button mat-menu-item color="accent" routerLink="{{url_campus}}">Campus Involvements</button>
+              <button mat-menu-item color="accent" routerLink="{{url_research}}">Research</button>
+              <button disabled mat-menu-item color="accent">Download CV</button>
+            </mat-menu>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  <mat-sidenav-container class="container" *ngIf="!isMobile">
+    <mat-sidenav mode="side" opened class="style-side-nav">
+    <div>
+      <button mat-button color="accent" routerLink="{{url_me}}">About Me</button><br>
+      <button mat-button color="accent" routerLink="{{url_education}}">Education</button><br>
+      <button mat-button color="accent" routerLink="{{url_skills}}">Skills</button><br>
+      <button mat-button color="accent" routerLink="{{url_experiences}}">Experiences</button><br>
+      <button mat-button color="accent" routerLink="{{url_campus}}">Campus Involvements</button><br>
+      <button mat-button color="accent" routerLink="{{url_research}}">Research</button><br>
+      <button disabled mat-button color="accent">Download CV</button><br>
+    </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <span *ngIf="isMobile">
+    <div class="mat-color">
+        <router-outlet></router-outlet>
+    </div>
+  </span>
+</div>

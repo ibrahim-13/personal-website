@@ -1,0 +1,23 @@
+.default-card {
+    max-width: 400px;
+    text-align: left;
+}
+  
+ .default-header-image {
+    background-image: url('/assets/mycoverimg.png');
+    background-size: cover;
+}
+
+.main-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.center-position-svg-text {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  padding: 5px;
+}

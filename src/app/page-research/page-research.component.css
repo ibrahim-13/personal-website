@@ -1,0 +1,30 @@
+.default-card {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .default-header-image {
+    background-image: url('/assets/diuicon.png');
+    background-size: cover;
+  }
+
+ .main-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.highlight {
+  color:burlywood;
+}
+
+.name {
+  font-style: oblique;
+  font-weight: bolder;
+  color: wheat
+}

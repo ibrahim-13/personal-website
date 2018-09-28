@@ -1,0 +1,22 @@
+<div class="main-div">
+    <mat-card class="default-card">
+      <mat-card-header>
+        <mat-card-title><span style="color:burlywood;">Programming Languages</span></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngFor="let lang of languages">
+          <p>{{lang}}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="default-card">
+      <mat-card-header>
+        <mat-card-title><span style="color:burlywood;">Frameworks/Tools</span></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div *ngFor="let item of frameworktools">
+          <p>{{item}}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+</div>
