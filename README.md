@@ -7,4 +7,4 @@
 2. [Angular Material](https://material.angular.io)
 3. [Angualr CLI](https://cli.angular.io)
 
-**NB:** Live website is hosted [HERE][http://ibrahimkhan.co.nf]
+**NB:** Live website is hosted [HERE](http://ibrahimkhan.co.nf)
